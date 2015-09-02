@@ -1,0 +1,8 @@
+uvcvideo               81073  0 
+videobuf2_vmalloc      13216  1 uvcvideo
+videobuf2_memops       13362  1 videobuf2_vmalloc
+videobuf2_core         59104  1 uvcvideo
+v4l2_common            15681  1 videobuf2_core
+videodev              153793  3 uvcvideo,v4l2_common,videobuf2_core
+media                  21903  2 uvcvideo,videodev
+video                  20128  1 i915
